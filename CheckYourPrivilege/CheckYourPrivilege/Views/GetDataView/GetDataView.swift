@@ -38,6 +38,7 @@ struct GetDataView: View {
                         }
                         Slider(value: $genderConformingVal, in: -10...10)
                     }
+                    .listRowBackground(Color(.clear))
                     .padding(.vertical, 15)
                     
                     VStack {
@@ -48,6 +49,7 @@ struct GetDataView: View {
                         }
                         Slider(value: $maleVal, in: -10...10)
                     }
+                    .listRowBackground(Color(.clear))
                     .padding(.vertical, 15)
                     
                     VStack {
@@ -58,6 +60,7 @@ struct GetDataView: View {
                         }
                         Slider(value: $whiteVal, in: -10...10)
                     }
+                    .listRowBackground(Color(.clear))
                     .padding(.vertical, 15)
                     
                     VStack {
@@ -68,6 +71,7 @@ struct GetDataView: View {
                         }
                         Slider(value: $europeanVal, in: -10...10)
                     }
+                    .listRowBackground(Color(.clear))
                     .padding(.vertical, 15)
                     
                     VStack {
@@ -78,6 +82,7 @@ struct GetDataView: View {
                         }
                         Slider(value: $heteroVal, in: -10...10)
                     }
+                    .listRowBackground(Color(.clear))
                     .padding(.vertical, 15)
                     
                     VStack {
@@ -88,6 +93,7 @@ struct GetDataView: View {
                         }
                         Slider(value: $wealthAndFinStabilityVal, in: -10...10)
                     }
+                    .listRowBackground(Color(.clear))
                     .padding(.vertical, 15)
                     
                     VStack {
@@ -98,6 +104,7 @@ struct GetDataView: View {
                         }
                         Slider(value: $abledAndGoodMentalHealthVal, in: -10...10)
                     }
+                    .listRowBackground(Color(.clear))
                     .padding(.vertical, 15)
                     
                     VStack {
@@ -108,6 +115,7 @@ struct GetDataView: View {
                         }
                         Slider(value: $credentialedVal, in: -10...10)
                     }
+                    .listRowBackground(Color(.clear))
                     .padding(.vertical, 15)
                     
                     VStack {
@@ -118,6 +126,7 @@ struct GetDataView: View {
                         }
                         Slider(value: $youngVal, in: -10...10)
                     }
+                    .listRowBackground(Color(.clear))
                     .padding(.vertical, 15)
                     
                     VStack {
@@ -181,6 +190,7 @@ struct GetDataView: View {
                     .padding(.vertical, 15)
 
                 }
+                .listStyle(.inset)
                 .edgesIgnoringSafeArea([])
                 
                 
@@ -242,6 +252,8 @@ struct GetDataView: View {
                 .buttonStyle(.borderedProminent)
                 .padding()
             }
+            .background(LinearGradient(gradient: Gradient(colors: [.red, .orange, .yellow, .green, .blue, .indigo, .purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            .edgesIgnoringSafeArea([])
             .edgesIgnoringSafeArea([])
             .navigationTitle("Check Your Privilege")
         }
